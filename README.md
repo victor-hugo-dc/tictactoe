@@ -22,13 +22,13 @@ winning_masks = [
                 0b100010001, 0b001010100 
             ]
 
-            for mask in winning_masks:
-                if self.player_x & mask == mask:
-                    return 1
+for mask in winning_masks:
+    if self.player_x & mask == mask:
+        return 1
                 
-                elif self.player_o & mask == mask:
-                    return -1
+    elif self.player_o & mask == mask:
+        return -1
             
-            if self.player_x | self.player_o == 0b111111111:
-                return 0
+    if self.player_x | self.player_o == 0b111111111:
+        return 0
 ```
